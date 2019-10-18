@@ -4,10 +4,10 @@ import './Character.css';
 let Character = (props) => {
     return (
         <div>
-            <h2>Jack's Bio</h2>
-            <p>Race: Human</p>
-            <p>Status: Healthy</p>
-            <p>Comment: 'Hi'</p>
+            <h2>Name: {props.name}</h2>
+            <p>Race: {props.race}</p>
+            <p>Status: {props.status}</p>
+            <p className={props.comment ? 'visible' : 'hidden'}>Comment: {props.comment}</p>
         </div>
     )
 }
